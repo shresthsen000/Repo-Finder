@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="search-section">
+            <label for="search">Search Username:</label>
+            <div class="input-group">
+                <input type="text" id="search" placeholder="Enter username">
+                <button onclick="searchUser()">Search</button>
+            </div>
+        </div>
+        <div id="profile" class="hidden">
+            <img id="profileImage" src="" alt="Profile Picture">
+            <h2 id="profileName"></h2>
+        </div>
+        <div id="repositories"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
